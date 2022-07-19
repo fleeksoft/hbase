@@ -1,0 +1,10 @@
+#https://artifacthub.io/packages/helm/gradiant-bigdata/hbase
+#helm repo add gradiant-bigdata https://gradiant.github.io/bigdata-charts
+#helm install my-hbase gradiant-bigdata/hbase --create-namespace -n hbase -f hbase.values.yaml
+
+
+image:
+  repository: ghcr.io/fleeksoft/hbase/hbase-master
+  tag: 2.4.13
+prometheus:
+  enabled: false
