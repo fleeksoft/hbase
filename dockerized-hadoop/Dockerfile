@@ -1,4 +1,4 @@
-FROM library/openjdk:8
+FROM openjdk:11-jre-slim
 
 LABEL maintainer="cgiraldo@gradiant.org" \
       organization="gradiant.org"
