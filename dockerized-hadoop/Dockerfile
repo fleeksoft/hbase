@@ -1,11 +1,10 @@
-FROM openjdk:8-jre-slim
+FROM library/openjdk:8
 
 LABEL maintainer="cgiraldo@gradiant.org" \
       organization="gradiant.org"
 
 ARG version=3.3.3
 ENV HADOOP_VERSION=$version \
-    HADOOP_PREFIX=/opt/hadoop \
     HADOOP_HOME=/opt/hadoop \
     HADOOP_CONF_DIR=/opt/hadoop/etc/hadoop \
     PATH=$PATH:/opt/hadoop/bin \
