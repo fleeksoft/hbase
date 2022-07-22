@@ -1,4 +1,4 @@
-FROM ghcr.io/fleeksoft/hbase/hdfs:3.3.3 as hadoop
+FROM ghcr.io/fleeksoft/hbase/hdfs:3.3.3.2 as hadoop
 
 #FROM openjdk:8u171-jre-alpine3.8
 #FROM openjdk:8u332-jre
