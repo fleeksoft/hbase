@@ -1,12 +1,12 @@
-FROM ghcr.io/fleeksoft/hbase/hdfs:3.3.3.2 as hadoop
+FROM ghcr.io/fleeksoft/hbase/hdfs:3.3.4 as hadoop
 
 #FROM openjdk:8u171-jre-alpine3.8
 #FROM openjdk:8u332-jre
 FROM library/openjdk:8-alpine
 
-LABEL maintainer="cgiraldo@gradiant.org"
-LABEL organization="gradiant.org"
-ARG VERSION=2.4.13
+LABEL maintainer="fleeksoft@gmail.com"
+LABEL organization="fleeksoft.com"
+ARG VERSION=2.4.14
 ENV HBASE_VERSION=$VERSION
 
 RUN apk add bash 

@@ -5,6 +5,6 @@
 
 image:
   repository: ghcr.io/fleeksoft/hbase/hbase-master
-  tag: 2.4.13
+  tag: 2.4.14
 prometheus:
   enabled: false

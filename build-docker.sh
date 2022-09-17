@@ -1,10 +1,10 @@
 #!/bin/bash
 
-VERSION=2.4.13
+VERSION=2.4.14
 
-docker build --platform=linux/amd64 --build-arg VERSION=$VERSION -t ghcr.io/fleeksoft/hbase/hbase-base:2.4.13.2 hbase-base
-docker build --platform=linux/amd64 --build-arg VERSION=$VERSION -t ghcr.io/fleeksoft/hbase/hbase-master:2.4.13.2 hbase-master
-docker build --platform=linux/amd64 --build-arg VERSION=$VERSION -t ghcr.io/fleeksoft/hbase/hbase-region:2.4.13.2 hbase-region
+docker build --platform=linux/amd64 --build-arg VERSION=$VERSION -t ghcr.io/fleeksoft/hbase/hbase-base:2.4.14 hbase-base
+docker build --platform=linux/amd64 --build-arg VERSION=$VERSION -t ghcr.io/fleeksoft/hbase/hbase-master:2.4.14 hbase-master
+docker build --platform=linux/amd64 --build-arg VERSION=$VERSION -t ghcr.io/fleeksoft/hbase/hbase-region:2.4.14 hbase-region
 
 # docker tag gradiant/hbase-base:$VERSION gradiant/hbase-base:latest
 # docker tag gradiant/hbase-master:$VERSION gradiant/hbase-master:latest
